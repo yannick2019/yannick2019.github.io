@@ -20,7 +20,7 @@ main {
 }
 
 main .intro {
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 
@@ -38,6 +38,21 @@ main .def {
 .social-icons a {
     text-decoration: none;
 }
+
+main .image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 200;
+    margin-bottom: 2rem;
+}
+
+main .image img {
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 
 @media screen and (max-width: 754px){
     main .intro {
@@ -66,5 +81,11 @@ main .def {
     .social-icons i {
         font-size: 1.8rem;
         padding: 10px;
+    }
+
+    main .image img {
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
     }
 }
