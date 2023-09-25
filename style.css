@@ -71,7 +71,7 @@ main .image img {
 
 @media screen and (max-width: 480px){
     main .intro {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     main .def {
@@ -84,7 +84,7 @@ main .image img {
     }
 
     main .image img {
-        height: 150px;
+        height: 188px;
         border-radius: 10px;
         object-fit: cover;
     }
