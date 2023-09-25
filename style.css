@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Roboto:wght@100;400&family=Rubik:wght@500&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+    background: #EDEDED;
+	color: #4B5658;
+}
+
+main .intro {
+    font-size: 3.75em;
+    font-weight: 600;
+}
+
+main .def {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: 100;
+}
+
+.social-icons i {
+    font-size: 3em;
+    padding: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
