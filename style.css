@@ -20,7 +20,7 @@ main {
 }
 
 main .intro {
-    font-size: 3.75em;
+    font-size: 3.75rem;
     font-weight: 600;
 }
 
@@ -31,10 +31,40 @@ main .def {
 }
 
 .social-icons i {
-    font-size: 3em;
+    font-size: 3rem;
     padding: 10px;
 }
 
 .social-icons a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 754px){
+    main .intro {
+        font-size: 3rem;
+    }
+
+    main .def {
+        font-size: 1.5rem;
+    }
+
+    .social-icons i {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main .intro {
+        font-size: 1.5rem;
+    }
+
+    main .def {
+        font-size: 1.2rem;
+    }
+
+    .social-icons i {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
 }
