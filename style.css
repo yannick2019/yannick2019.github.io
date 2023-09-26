@@ -20,7 +20,7 @@ main {
 }
 
 main .intro {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 600;
 }
 
@@ -33,6 +33,7 @@ main .def {
 .social-icons i {
     font-size: 3rem;
     padding: 10px;
+    color: #4B5658;
 }
 
 .social-icons a {
@@ -43,12 +44,11 @@ main .image {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 200;
     margin-bottom: 2rem;
 }
 
 main .image img {
-    height: 250px;
+    height: 220px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -71,7 +71,7 @@ main .image img {
 
 @media screen and (max-width: 480px){
     main .intro {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     main .def {
@@ -85,6 +85,27 @@ main .image img {
 
     main .image img {
         height: 188px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main .intro {
+        font-size: 1.3rem;
+    }
+
+    main .def {
+        font-size: 1rem;
+    }
+
+    .social-icons i {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    main .image img {
+        height: 140px;
         border-radius: 10px;
         object-fit: cover;
     }
