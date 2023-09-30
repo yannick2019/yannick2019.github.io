@@ -44,12 +44,12 @@ main .image {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;   
 }
 
 main .image img {
-    height: 220px;
-    border-radius: 10px;
+    height: 180px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
