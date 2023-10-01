@@ -84,7 +84,7 @@ main .image img {
     }
 
     main .image img {
-        height: 180px;
+        height: 160px;
         border-radius: 50%;
         object-fit: cover;
     }
