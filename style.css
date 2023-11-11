@@ -13,15 +13,7 @@ body {
     display: flex;
     justify-content: center;
     color: black;
-    background-color: #badc58;
-    background-image: 
-        radial-gradient(at 9% 89%, hsla(215, 90%, 73%, 1) 0px, transparent 50%),
-        radial-gradient(at 72% 6%, hsla(331, 74%, 64%, 1) 0px, transparent 50%),
-        radial-gradient(at 24% 19%, hsla(14, 90%, 74%, 1) 0px, transparent 50%),
-        radial-gradient(at 65% 6%, hsla(6, 79%, 76%, 1) 0px, transparent 50%),
-        radial-gradient(at 20% 98%, hsla(316, 72%, 64%, 1) 0px, transparent 50%),
-        radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
-        radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%);
+    background-color: #FFD28F;
     min-height: 100vh;
 }
 
@@ -36,35 +28,52 @@ body {
     height: 69vh;
     margin-top: 10vh;
     margin-bottom: 30px;
-    /*background: rgba(0, 0, 0, 0.56);*/
     background-color: #f5f6fa;
     color: black;
-    padding: 50px;
+    padding: 40px;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.6px);
     -webkit-backdrop-filter: blur(11.6px);
 }
 
-.logo {
-    display: inline-block;
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: -10px;
+.heading {
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 0;
 }
 
 ul.nav-links {
     margin: 0;
-    float: right;
     display: flex;
     list-style: none;
+    gap: 9px;
 }
 
 li.nav-link {
     display: inline-block;
-    margin-left: 30px;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;
+    padding: 0 2px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+}
+
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
 }
 
 .content {
@@ -113,13 +122,13 @@ button:hover {
 }
 
 .image-wrapper img {
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .attrebute {
     position: absolute;
-    bottom: 20px;
-    right: 0;
+    bottom: 32px;
+    right: 9px;
     font-size: 10px;
 }
 
@@ -138,18 +147,40 @@ button:hover {
     .content {
         flex-direction: column;
     }
+
 }
 
 @media screen and (max-width: 720px) {
     .glass-container {
         height: auto;
+        padding: 18px;
     }
-    .log {
-        font-size: 18px;
+
+    .hamburger {
+        display: block;
+        padding: 1rem;
     }
-    .li.nav-link {
-        font-size: 12px;
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        background-color: #fff;
+        flex-direction: column;
+        padding-top: 20px;
+        box-shadow: 4px 4px 4px #b2bec3;
+        top: 80px;
+        height: 45%;
+        width: 60%;
+        transform: 0.3s;
     }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-link a {
+        font-size: 24px;
+    }
+
     .main h2 {
         font-size: 26px;
     }
@@ -157,7 +188,7 @@ button:hover {
         font-size: 15px;
     }
     button {
-        font-size: 13px;
+        font-size: 18px;
     }
     .image-wrapper img {
         max-width: 400px;
@@ -167,10 +198,49 @@ button:hover {
 @media screen and (max-width: 520px) {
 
     .glass-container {
+        max-width: 368px;
         height: auto;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .navbar {
+        padding: 0 10px;
     }
 
     .image-wrapper img {
         max-width: 320px;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 1rem;
+    }
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        background-color: #fff;
+        flex-direction: column;
+        padding-top: 20px;
+        box-shadow: 4px 4px 4px #b2bec3;
+        top: 80px;
+        height: 45%;
+        width: 60%;
+        transform: 0.3s;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-link a {
+        font-size: 24px;
     }
 }
